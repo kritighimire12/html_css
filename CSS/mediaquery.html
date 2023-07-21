@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: aqua;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .demo{
+            height: 300px;
+            width: 23%;
+            background-color: red;
+            margin-bottom: 10px;
+        }
+        @media screen and (max-width:700px){
+            .container{
+                background-color: pink;
+            }
+            .demo{
+                background-color: orange;
+                width: 32%;
+            }
+        }
+        @media screen and (max-width:600px){
+            .demo{
+                background-color: aquamarine;
+                width: 49%;
+            }
+            @media screen and (max-width:400px){
+                .demo{
+                    background-color: hotpink;
+                    width: 98%;
+                }
+                
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+    </div>
+    
+</body>
+</html>
